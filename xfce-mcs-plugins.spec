@@ -47,8 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog
-%{_datadir}/xfce4/doc/*/*.html
-%{_datadir}/xfce4/doc/*/images/*.png
-%dir %{_libdir}/xfce4
-%dir %{_libdir}/xfce4/mcs-plugins
+%docdir %{_datadir}/xfce4/doc
+%{_datadir}/xfce4/doc/C/*.html
+%{_datadir}/xfce4/doc/C/images/*.png
 %attr(755,root,root) %{_libdir}/xfce4/mcs-plugins/*.so
