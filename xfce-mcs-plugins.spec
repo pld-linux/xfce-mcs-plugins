@@ -1,15 +1,12 @@
-
-%define		_snap 20040816
-
 Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
-Version:	4.1.3
-Release:	0.%{_snap}.1
+Version:	4.1.90
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ep09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
-# Source0-md5:	f90ae2eafac12783679278d5a276d02d
+Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	66dffcbb69afce5c999623f9729ca629
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
@@ -32,7 +29,7 @@ xfce-mcs-plugins to zbiór wtyczek dla zarz±dcy ustawieñ
 wielokana³owych.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 %patch0 -p1
 
 mv -f po/{fa_IR,fa}.po
