@@ -67,8 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog
 %docdir %{_datadir}/xfce4/doc
 %{_datadir}/xfce4/doc/C/*
-%lang(fr) %{_datadir}/xfce4/doc/fr/
-%lang(it) %{_datadir}/xfce4/doc/it/
+%lang(fr) %{_datadir}/xfce4/doc/fr/*
+%lang(it) %{_datadir}/xfce4/doc/it/*
 %{_iconsdir}/hicolor/*/*/*
 
 %attr(755,root,root) %{_libdir}/xfce4/mcs-plugins/*.so
