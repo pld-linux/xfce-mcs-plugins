@@ -16,10 +16,8 @@ BuildRequires:	gtk+2-devel >= 2.0.6
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
-BuildRequires:	startup-notification-devel
 BuildRequires:	xfce-mcs-manager-devel >= %{version}
 Requires:	gtk+2 >= 2.0.6
-Requires:	startup-notification
 Requires:	xfce-mcs-manager >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
