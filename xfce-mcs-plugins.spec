@@ -11,9 +11,9 @@ URL:		http://www.xfce.org/
 BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRequires:	intltool
 BuildRequires:	pkgconfig >= 0.9.0
-BuildRequires:	xfce-mcs-manager-devel >= 3.99.2
+BuildRequires:	xfce-mcs-manager-devel >= 3.99.3
 Requires:	gtk+2 >= 2.0.0
-Requires:	xfce-mcs-manager >= 3.99.2
+Requires:	xfce-mcs-manager >= 3.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
