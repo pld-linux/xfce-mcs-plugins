@@ -2,19 +2,22 @@ Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
 Version:	4.0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 #Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar.gz
 Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
 # Source0-md5:	a57755ea2a02fd18eb1560b6347ade89
+Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
+BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 2.0.6
 BuildRequires:	intltool
+BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	xfce-mcs-manager-devel >= %{version}
-Requires:	gtk+2 >= 2.0.0
+Requires:	gtk+2 >= 2.0.6
 Requires:	xfce-mcs-manager >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,12 +31,20 @@ wielokana³owych.
 
 %prep
 %setup -q
+%patch0 -p1
+
+mv -f po/{fa_IR,fa}.po
+mv -f po/{no,nb}.po
+mv -f po/{pt_PT,pt}.po
 
 %build
-rm -f missing
 glib-gettextize --copy --force
 intltoolize --copy --force
-cp -f /usr/share/automake/config.sub .
+%{__libtoolize}
+%{__aclocal} -I m4
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
