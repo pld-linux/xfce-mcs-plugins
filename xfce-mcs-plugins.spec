@@ -11,6 +11,7 @@ Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.2.0
 BuildRequires:	intltool
 BuildRequires:	libtool
