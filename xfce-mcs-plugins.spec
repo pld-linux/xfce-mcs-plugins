@@ -1,12 +1,15 @@
+
+%define		_snap 20040806
+
 Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
-Version:	4.1.1
-Release:	1
+Version:	4.2.0
+Release:	0.%{_snap}
 License:	GPL
 Group:		X11/Applications
-Source0:	http://lo1sanok.eu.org/~troll/PLD/xfce4/%{name}-%{version}.tar.bz2
-# Source0-md5:	41108e0c4d3b5c02f48bcc3a5dd40eb9
+Source0:	http://wp09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
+# Source0-md5:	fed9b98156a08fc40aedfd8993100081
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
@@ -29,22 +32,11 @@ xfce-mcs-plugins to zbiór wtyczek dla zarz±dcy ustawieñ
 wielokana³owych.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 %patch0 -p1
 
 mv -f po/{fa_IR,fa}.po
 mv -f po/{pt_PT,pt}.po
-
-mkdir -p doc/it/images
-mkdir -p icons/{48x48,scalable}
-
-for i in doc/it{,/images}/Makefile.in icons{,/48x48,/scalable}/Makefile.in
-do
-    cat << EOF > $i
-all:
-install:
-EOF
-done
 
 %build
 glib-gettextize --copy --force
@@ -76,6 +68,8 @@ rm -rf $RPM_BUILD_ROOT
 %docdir %{_datadir}/xfce4/doc
 %{_datadir}/xfce4/doc/C/*
 %lang(fr) %{_datadir}/xfce4/doc/fr/
+%lang(it) %{_datadir}/xfce4/doc/it/
+%{_iconsdir}/hicolor/*/*/*
 
 %attr(755,root,root) %{_libdir}/xfce4/mcs-plugins/*.so
 
