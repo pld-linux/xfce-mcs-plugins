@@ -9,7 +9,7 @@ Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar
 # Source0-md5:	41034a32a0f57e7fd2ba6e3bc80ac7b2
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 1:2.2.0
 BuildRequires:	intltool
