@@ -15,10 +15,11 @@ BuildRequires:	gtk+2-devel >= 1:2.2.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
-BuildRequires:	xfce4-panel-devel >= %{version}
 BuildRequires:	xfce-mcs-manager-devel >= 4.1.2
+BuildRequires:	xfce4-panel-devel >= %{version}
 Requires:	gtk+2 >= 1:2.2.0
 Requires:	xfce-mcs-manager >= 4.1.2
+Requires:	xfce4-panel >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
