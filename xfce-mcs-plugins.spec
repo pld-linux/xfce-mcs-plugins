@@ -11,12 +11,12 @@ Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 1:2.2.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	xfce-mcs-manager-devel >= 4.1.2
-Requires:	gtk+2 >= 2.2.0
+Requires:	gtk+2 >= 1:2.2.0
 Requires:	xfce-mcs-manager >= 4.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
