@@ -1,12 +1,12 @@
 Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
-Version:	4.1.99.2
-Release:	3
+Version:	4.1.99.3
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	5d62df9a320e438590d19685af563a6f
+# Source0-md5:	377e3d53bb513e88dca5001f05037da2
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.50
