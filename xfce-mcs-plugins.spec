@@ -10,6 +10,7 @@ Source0: 	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 URL: 		http://www.xfce.org/
 BuildRequires: 	gtk+2-devel >= 2.0.0
 BuildRequires:	intltool
+BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	xfce-mcs-manager-devel >= 0.2.0
 Requires:	gtk+2 >= 2.0.0
 Requires:	xfce-mcs-manager >= 0.2.0
