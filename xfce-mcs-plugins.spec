@@ -13,11 +13,12 @@ Source0:	%{name}-snap-%{snap}.tar.bz2
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 2.0.6
+BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
 BuildRequires:	xfce-mcs-manager-devel >= %{version}
-Requires:	gtk+2 >= 2.0.0
+Requires:	gtk+2 >= 2.0.6
 Requires:	xfce-mcs-manager >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,6 +34,8 @@ wielokana³owych.
 %setup -q -n %{name}
 
 %build
+glib-gettextize --copy --force
+intltoolize --copy --force
 %{__libtoolize}
 %{__aclocal} -I m4
 %{__autoheader}
