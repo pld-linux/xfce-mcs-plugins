@@ -8,7 +8,7 @@ Version:	4.2.0
 Release:	0.%{_snap}
 License:	GPL
 Group:		X11/Applications
-Source0:	http://wp09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
+Source0:	http://ep09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
 # Source0-md5:	fed9b98156a08fc40aedfd8993100081
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
