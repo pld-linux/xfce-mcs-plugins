@@ -1,11 +1,11 @@
 
-%define		_snap 20040806
+%define		_snap 20040813
 
 Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
-Version:	4.2.0
-Release:	0.%{_snap}
+Version:	4.1.3
+Release:	0.%{_snap}.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ep09.pld-linux.org/~havner/xfce4/%{name}-%{_snap}.tar.bz2
@@ -14,13 +14,13 @@ Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.0.6
+BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
-BuildRequires:	xfce-mcs-manager-devel >= 4.0.0
-Requires:	gtk+2 >= 2.0.6
-Requires:	xfce-mcs-manager >= 4.0.0
+BuildRequires:	xfce-mcs-manager-devel >= 4.1.2
+Requires:	gtk+2 >= 2.2.0
+Requires:	xfce-mcs-manager >= 4.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
