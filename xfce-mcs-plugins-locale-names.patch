@@ -1,11 +1,11 @@
---- xfce-mcs-plugins-4.1.99.3/configure.ac.orig	2004-12-20 22:00:57.000000000 +0100
-+++ xfce-mcs-plugins-4.1.99.3/configure.ac	2004-12-28 11:18:00.807018360 +0100
+--- xfce-mcs-plugins-4.2.2/configure.ac.orig	2005-05-15 10:08:35.000000000 +0200
++++ xfce-mcs-plugins-4.2.2/configure.ac	2005-05-19 02:19:09.094528536 +0200
 @@ -51,7 +51,7 @@
  dnl Check for i18n support
- BM_I18N([xfce-mcs-plugins], [ar az be bg ca cs de en_GB es es_MX es \
-                              et eu fa fi fr gu he hi hu it ja \
--                             ko lt ms nl pa pl pt_BR pt_PT ro ru \
-+                             ko lt ms nl pa pl pt_BR pt ro ru \
+ BM_I18N([xfce-mcs-plugins], [ar az be bg bn_IN ca cs de el en_GB es
+ 			     es_MX es et eu fa fi fr gu he hi hu it ja \
+-                             ko lt mr ms nl pa pl pt_BR pt_PT ro ru \
++                             ko lt mr ms nl pa pl pt_BR pt ro ru \
                               sk sv ta tr uk vi zh_CN zh_TW])
  
  dnl Check for X11
