@@ -5,7 +5,7 @@ Version:	4.2.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:        http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
+Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
 # Source0-md5:	cdd1ca3ff7610a45658aa801b91da8dc
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
