@@ -39,8 +39,8 @@ wielokana³owych.
 mv -f po/{pt_PT,pt}.po
 
 %build
-glib-gettextize --copy --force
-intltoolize --copy --force
+%{__intltoolize}
+%{__glib_gettextize}
 %{__libtoolize}
 %{__aclocal} -I %{_datadir}/xfce4/dev-tools/m4macros
 %{__autoheader}
