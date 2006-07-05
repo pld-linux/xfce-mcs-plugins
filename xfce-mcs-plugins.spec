@@ -1,12 +1,12 @@
 Summary:	Plugins for multi channel settings manager
 Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
 Name:		xfce-mcs-plugins
-Version:	4.2.1
+Version:	4.2.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:        http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
-# Source0-md5:	808bf377fbbbb2fad06095286be52dc5
+Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
+# Source0-md5:	cdd1ca3ff7610a45658aa801b91da8dc
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.50
@@ -17,6 +17,7 @@ BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.9.0
 BuildRequires:	xfce-mcs-manager-devel >= 4.1.2
+BuildRequires:	xfce4-dev-tools
 BuildRequires:	xfce4-panel-devel >= %{version}
 Requires:	gtk+2 >= 1:2.2.0
 Requires:	xfce-mcs-manager >= 4.1.2
@@ -41,7 +42,7 @@ mv -f po/{pt_PT,pt}.po
 glib-gettextize --copy --force
 intltoolize --copy --force
 %{__libtoolize}
-%{__aclocal} -I m4
+%{__aclocal} -I %{_datadir}/xfce4/dev-tools/m4macros
 %{__autoheader}
 %{__automake}
 %{__autoconf}
@@ -65,8 +66,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog
 %docdir %{_datadir}/xfce4/doc
-%{_datadir}/xfce4/doc/C/*.html
-%{_datadir}/xfce4/doc/C/images/*.png
+%{_datadir}/xfce4/doc/C/*
+%lang(fr) %{_datadir}/xfce4/doc/fr/*
+%lang(he) %{_datadir}/xfce4/doc/he/*
 %{_iconsdir}/hicolor/*/*/*
 
 %attr(755,root,root) %{_libdir}/xfce4/mcs-plugins/*.so
