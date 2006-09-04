@@ -21,7 +21,7 @@ BuildRequires:	xfce-mcs-manager-devel >= %{version}
 BuildRequires:	xfce4-dev-tools >= %{version}
 Requires(post,postun):	gtk+2 >= 2:2.10.1
 Requires(post,postun):	hicolor-icon-theme
-Requires:	gtk+2 >= 1:2.10.1
+Requires:	gtk+2 >= 2:2.10.1
 Requires:	xfce-mcs-manager >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
