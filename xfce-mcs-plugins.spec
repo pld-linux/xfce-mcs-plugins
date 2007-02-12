@@ -1,5 +1,5 @@
 Summary:	Plugins for multi channel settings manager
-Summary(pl.UTF-8):   Wtyczki dla zarządcy ustawień wielokanałowych
+Summary(pl.UTF-8):	Wtyczki dla zarządcy ustawień wielokanałowych
 Name:		xfce-mcs-plugins
 Version:	4.4.0
 Release:	1
