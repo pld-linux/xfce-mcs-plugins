@@ -1,5 +1,5 @@
 Summary:	Plugins for multi channel settings manager
-Summary(pl):	Wtyczki dla zarz±dcy ustawieñ wielokana³owych
+Summary(pl.UTF-8):   Wtyczki dla zarzÄ…dcy ustawieÅ„ wielokanaÅ‚owych
 Name:		xfce-mcs-plugins
 Version:	4.4.0
 Release:	1
@@ -27,9 +27,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 xfce-mcs-plugins is a set of plugins for the multi channel settings
 manager.
 
-%description -l pl
-xfce-mcs-plugins to zbiór wtyczek dla zarz±dcy ustawieñ
-wielokana³owych.
+%description -l pl.UTF-8
+xfce-mcs-plugins to zbiÃ³r wtyczek dla zarzÄ…dcy ustawieÅ„
+wielokanaÅ‚owych.
 
 %prep
 %setup -q
